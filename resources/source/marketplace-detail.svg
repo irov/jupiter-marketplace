@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070C1B"/><stop offset="1" stop-color="#101830"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#66E39A"/><stop offset="1" stop-color="#55D8FF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.4"/></filter>
+    <clipPath id="frame"><rect width="1200" height="560" rx="30"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="560" fill="url(#bg)"/>
+    <circle cx="80" cy="80" r="210" fill="#1F72E5" opacity="0.08"/>
+    <circle cx="1140" cy="510" r="240" fill="#35C98A" opacity="0.06"/>
+    <rect width="1200" height="560" fill="none" stroke="#25375F" stroke-width="2"/>
+  </g>
+
+  <g font-family="SF Pro Display, Inter, Arial, sans-serif">
+    <g transform="translate(58 55)">
+      <rect width="154" height="31" rx="15.5" fill="#14263A" stroke="#2D5362"/>
+      <text x="18" y="21" fill="#72E7B0" font-size="12" font-weight="750" letter-spacing="1.3">SAFE GIT WORKFLOW</text>
+    </g>
+    <text x="58" y="146" fill="#F7FAFF" font-size="47" font-weight="760" letter-spacing="-1.2">The branch stays</text>
+    <text x="58" y="202" fill="url(#accent)" font-size="47" font-weight="760" letter-spacing="-1.2">with the task.</text>
+    <text x="58" y="258" fill="#B9C6DD" font-size="19">Review exactly what changed.</text>
+    <text x="58" y="287" fill="#B9C6DD" font-size="19">Commit, push, rebase, and create</text>
+    <text x="58" y="316" fill="#B9C6DD" font-size="19">the PR or MR from one task view.</text>
+
+    <g transform="translate(58 381)" font-size="13" font-weight="650">
+      <g><circle cx="10" cy="10" r="10" fill="#1B4B37"/><path d="M6 10l3 3 6-7" fill="none" stroke="#66E39A" stroke-width="2"/><text x="28" y="15" fill="#D4DFEF">Task-scoped worktree</text></g>
+      <g transform="translate(0 38)"><circle cx="10" cy="10" r="10" fill="#1B4B37"/><path d="M6 10l3 3 6-7" fill="none" stroke="#66E39A" stroke-width="2"/><text x="28" y="15" fill="#D4DFEF">Visible Git state</text></g>
+      <g transform="translate(0 76)"><circle cx="10" cy="10" r="10" fill="#1B4B37"/><path d="M6 10l3 3 6-7" fill="none" stroke="#66E39A" stroke-width="2"/><text x="28" y="15" fill="#D4DFEF">Explicit external actions</text></g>
+    </g>
+
+    <g transform="translate(488 42)" filter="url(#shadow)">
+      <rect width="654" height="476" rx="22" fill="#0A1020" stroke="#2A3B60"/>
+      <rect width="654" height="55" rx="22" fill="#111A2E"/>
+      <rect y="33" width="654" height="22" fill="#111A2E"/>
+      <circle cx="24" cy="28" r="5" fill="#FF6F6F"/><circle cx="42" cy="28" r="5" fill="#FFD166"/><circle cx="60" cy="28" r="5" fill="#66E39A"/>
+      <text x="86" y="34" fill="#DDE6F6" font-size="14" font-weight="700">GH-248 · Prevent duplicate task refreshes</text>
+
+      <g transform="translate(23 77)">
+        <rect width="608" height="72" rx="13" fill="#101A2E"/>
+        <rect x="15" y="15" width="68" height="22" rx="11" fill="#173A56"/><text x="29" y="30" fill="#73DFFF" font-size="11" font-weight="750">GITHUB</text>
+        <rect x="92" y="15" width="76" height="22" rx="11" fill="#1C4334"/><text x="107" y="30" fill="#75E5A8" font-size="11" font-weight="750">IN WORK</text>
+        <text x="15" y="58" fill="#AEBBD0" font-size="12">feature/GH-248-dedupe-task-refreshes</text>
+        <text x="452" y="30" fill="#8295B3" font-size="11">WORKTREE VERIFIED</text>
+        <circle cx="584" cy="26" r="8" fill="#1B4B37"/><path d="M580 26l3 3 6-7" fill="none" stroke="#66E39A" stroke-width="1.8"/>
+      </g>
+
+      <g transform="translate(23 167)">
+        <text x="0" y="16" fill="#7F92B3" font-size="11" font-weight="750" letter-spacing="1.1">TASK FILES</text>
+        <g transform="translate(0 31)">
+          <rect width="388" height="168" rx="13" fill="#0E172A" stroke="#223553"/>
+          <text x="16" y="28" fill="#DDE6F6" font-size="13" font-weight="650">src/ui/taskDetailsView.ts</text><text x="322" y="28" fill="#66E39A" font-size="12">+24</text><text x="358" y="28" fill="#FF879D" font-size="12">−9</text>
+          <line x1="16" y1="44" x2="372" y2="44" stroke="#243552"/>
+          <text x="16" y="70" fill="#DDE6F6" font-size="13" font-weight="650">src/workflow/taskSource.ts</text><text x="322" y="70" fill="#66E39A" font-size="12">+122</text>
+          <line x1="16" y1="86" x2="372" y2="86" stroke="#243552"/>
+          <text x="16" y="112" fill="#DDE6F6" font-size="13" font-weight="650">README.md</text><text x="322" y="112" fill="#66E39A" font-size="12">+165</text>
+          <line x1="16" y1="128" x2="372" y2="128" stroke="#243552"/>
+          <text x="16" y="151" fill="#7F92B3" font-size="11">3 files · working tree and branch compared</text>
+        </g>
+        <g transform="translate(406 31)">
+          <rect width="202" height="168" rx="13" fill="#0E172A" stroke="#223553"/>
+          <text x="16" y="28" fill="#7F92B3" font-size="11" font-weight="750" letter-spacing="1.1">DELIVERY</text>
+          <circle cx="28" cy="59" r="9" fill="#1B4B37"/><path d="M24 59l3 3 6-7" fill="none" stroke="#66E39A" stroke-width="1.8"/><text x="45" y="64" fill="#D8E2F2" font-size="12">Tests passed</text>
+          <circle cx="28" cy="91" r="9" fill="#243958"/><text x="45" y="96" fill="#AEBBD0" font-size="12">Commit ready</text>
+          <circle cx="28" cy="123" r="9" fill="#243958"/><text x="45" y="128" fill="#AEBBD0" font-size="12">PR not created</text>
+          <text x="16" y="153" fill="#6F83A4" font-size="10">Nothing publishes silently</text>
+        </g>
+      </g>
+
+      <g transform="translate(23 405)" font-size="12" font-weight="700">
+        <rect width="132" height="42" rx="10" fill="#13233D" stroke="#2C456E"/><text x="28" y="27" fill="#DCE6F6">REVIEW FILES</text>
+        <g transform="translate(143 0)"><rect width="145" height="42" rx="10" fill="#173A2C" stroke="#2E6B4D"/><text x="26" y="27" fill="#79E8A9">COMMIT &amp; PUSH</text></g>
+        <g transform="translate(299 0)"><rect width="157" height="42" rx="10" fill="#2E6CF6"/><text x="28" y="27" fill="#FFFFFF">CREATE PULL REQUEST</text></g>
+        <text x="478" y="27" fill="#7386A5" font-weight="500">Task → Review</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1D"/><stop offset="1" stop-color="#111A33"/></linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5AD9FF"/><stop offset="1" stop-color="#A58BFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.38"/></filter>
+    <clipPath id="frame"><rect width="1200" height="560" rx="30"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="560" fill="url(#bg)"/>
+    <circle cx="152" cy="490" r="260" fill="#233D8D" opacity="0.10"/>
+    <circle cx="1120" cy="58" r="190" fill="#7648E8" opacity="0.08"/>
+    <rect width="1200" height="560" fill="none" stroke="#25375F" stroke-width="2"/>
+  </g>
+
+  <g font-family="SF Pro Display, Inter, Arial, sans-serif">
+    <g transform="translate(58 54)">
+      <rect width="172" height="31" rx="15.5" fill="#12203D" stroke="#2B4772"/>
+      <text x="18" y="21" fill="#85DFFF" font-size="12" font-weight="750" letter-spacing="1.3">ONE EXECUTION QUEUE</text>
+    </g>
+    <text x="58" y="145" fill="#F7FAFF" font-size="48" font-weight="760" letter-spacing="-1.2">Every source.</text>
+    <text x="58" y="202" fill="url(#title)" font-size="48" font-weight="760" letter-spacing="-1.2">One workflow.</text>
+    <text x="58" y="257" fill="#B9C6DD" font-size="20">GitHub, GitLab, Jira, Trello, Sentry,</text>
+    <text x="58" y="286" fill="#B9C6DD" font-size="20">or a local idea—all become the same</text>
+    <text x="58" y="315" fill="#B9C6DD" font-size="20">safe task workspace.</text>
+
+    <g transform="translate(58 389)" font-size="14" font-weight="650">
+      <g><circle cx="17" cy="17" r="17" fill="#1B3155"/><text x="11" y="22" fill="#72DFFF">G</text></g>
+      <g transform="translate(47 0)"><circle cx="17" cy="17" r="17" fill="#2D254F"/><text x="11" y="22" fill="#AE92FF">G</text></g>
+      <g transform="translate(94 0)"><circle cx="17" cy="17" r="17" fill="#20365B"/><text x="13" y="22" fill="#79B8FF">J</text></g>
+      <g transform="translate(141 0)"><circle cx="17" cy="17" r="17" fill="#173C47"/><text x="12" y="22" fill="#69E2CA">T</text></g>
+      <g transform="translate(188 0)"><circle cx="17" cy="17" r="17" fill="#442634"/><text x="12" y="22" fill="#FF8FB5">S</text></g>
+      <text x="0" y="67" fill="#7F91AF" font-size="12" letter-spacing="1.1">START TASK → ISOLATED WORKTREE</text>
+    </g>
+
+    <g transform="translate(520 42)" filter="url(#shadow)">
+      <rect width="620" height="476" rx="22" fill="#0A1020" stroke="#2A3B60"/>
+      <rect width="620" height="54" rx="22" fill="#111A2E"/>
+      <rect y="32" width="620" height="22" fill="#111A2E"/>
+      <circle cx="24" cy="27" r="5" fill="#FF6F6F"/><circle cx="42" cy="27" r="5" fill="#FFD166"/><circle cx="60" cy="27" r="5" fill="#66E39A"/>
+      <text x="86" y="33" fill="#DCE6F7" font-size="14" font-weight="700" letter-spacing="0.8">JUPITER / TASKS</text>
+      <text x="506" y="33" fill="#7F92B3" font-size="12">REFRESHED NOW</text>
+
+      <g transform="translate(24 76)">
+        <text x="0" y="18" fill="#66E39A" font-size="13" font-weight="760" letter-spacing="1.2">IN WORK</text>
+        <rect y="33" width="572" height="84" rx="14" fill="#131F37" stroke="#315488"/>
+        <rect x="14" y="49" width="56" height="23" rx="11.5" fill="#173C47"/><text x="29" y="65" fill="#72E7D1" font-size="11" font-weight="750">TRELLO</text>
+        <text x="82" y="66" fill="#F2F6FD" font-size="16" font-weight="650">Improve onboarding for new developers</text>
+        <text x="14" y="98" fill="#8294B2" font-size="12">feature/TRELLO-ONBOARD-42  ·  isolated worktree  ·  Agent ready</text>
+        <circle cx="548" cy="74" r="10" fill="#1B4B37"/><path d="M543 74l4 4 7-9" fill="none" stroke="#66E39A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <g transform="translate(24 213)">
+        <text x="0" y="18" fill="#73B6FF" font-size="13" font-weight="760" letter-spacing="1.2">READY TO START</text>
+        <g transform="translate(0 32)">
+          <rect width="572" height="61" rx="12" fill="#101A2E"/>
+          <rect x="13" y="19" width="48" height="23" rx="11.5" fill="#1B3155"/><text x="25" y="35" fill="#77DFFF" font-size="11" font-weight="750">GH-248</text>
+          <text x="75" y="36" fill="#DCE5F5" font-size="14" font-weight="600">Prevent duplicate task refreshes</text>
+          <text x="506" y="36" fill="#7386A5" font-size="12">TODO</text>
+        </g>
+        <g transform="translate(0 70)">
+          <rect y="33" width="572" height="61" rx="12" fill="#101A2E"/>
+          <rect x="13" y="52" width="48" height="23" rx="11.5" fill="#442634"/><text x="23" y="68" fill="#FF9ABC" font-size="11" font-weight="750">SENTRY</text>
+          <text x="75" y="69" fill="#DCE5F5" font-size="14" font-weight="600">Crash when restoring workspace state</text>
+          <text x="506" y="69" fill="#7386A5" font-size="12">OPEN</text>
+        </g>
+      </g>
+
+      <g transform="translate(24 408)">
+        <rect width="188" height="42" rx="10" fill="#2E6CF6"/>
+        <text x="31" y="27" fill="#FFFFFF" font-size="14" font-weight="720">START SELECTED TASK</text>
+        <text x="211" y="27" fill="#7F92B3" font-size="12">No checkout switching required</text>
+      </g>
+    </g>
+  </g>
+</svg>
