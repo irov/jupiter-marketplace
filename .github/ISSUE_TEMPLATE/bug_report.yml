@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible Jupiter defect
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Never include tokens, connection strings, private task text, or repository content.
+  - type: input
+    id: version
+    attributes:
+      label: Jupiter version
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: VS Code and operating system
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostic
+    attributes:
+      label: First relevant diagnostic
+      description: Redact private paths, provider data, and secrets.
+    validations:
+      required: true

@@ -1,80 +1,145 @@
 # Jupiter Workspaces
 
-## Finish the task. Skip the branch juggling.
+## Activate a folder. Focus the work. Guide it safely to delivery.
 
-Jupiter turns a GitHub issue, GitLab issue, Jira ticket, Trello card, Sentry bug, or local idea into a focused VS Code workspace: its own Git worktree, its own branch, and an AI agent that starts with the right context.
+Jupiter is an explicit, per-workspace AI delivery workflow for VS Code.
 
-Work on several tasks in parallel without stashing, switching one checkout back and forth, or wondering whether an agent is editing the right branch.
+**Set Up Jupiter → Workspace Task → Agent → verified changes → PR or MR**
 
-**Task → isolated worktree → task-aware AI → reviewed change → pull or merge request**
+> Activate Jupiter for the workspace where you need it. Work directly in the folder or give each task an isolated worktree and AI agent.
 
 [Install Jupiter Workspaces from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=wonderland.jupiter-io)
 
-![Jupiter connects tasks, Git, AI, and review in one orbit](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-flow.png)
+![Jupiter connects context, AI, verification, and review](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-flow.png)
 
-## One execution layer for all your work
+## What Jupiter does
 
-Most tracker extensions stop after showing you a list. Jupiter carries a task into an isolated workspace and keeps its source, Git state, AI context, changed files, and delivery actions together until review.
+Jupiter keeps task context, an AI Agent, changed files, verification evidence, and delivery actions in one VS Code workflow. It supports a permanent Workspace Task for the folder you opened and isolated Git worktrees for parallel tasks.
 
-| The usual workflow | With Jupiter |
+| Without Jupiter | With Jupiter |
 | --- | --- |
-| Switch branches, stash changes, and reopen context | Start a dedicated worktree and workspace for each task |
-| Copy a ticket into chat and explain the repository again | Open Codex or Copilot with the task, branch, repository, and guardrails attached |
-| Check the tracker, terminal, Git view, CI, and browser separately | See task state, files, actions, and PR/MR delivery in one place |
-| Hope automation is running in the intended checkout | Keep the task bound to its verified branch and worktree |
-| Put provider tokens in scripts or prompts | Keep credentials in VS Code SecretStorage |
+| Rebuild task context in every AI chat | Open an Agent with task and workspace context attached |
+| Switch, stash, and repair one checkout | Give parallel Git tasks their own branch and worktree |
+| Search separate tracker, Git, CI, and review tabs | Follow one delivery rail from context to review |
+| Guess whether a change is safe to publish | See evidence, blockers, and the next best action |
+| Put tokens into scripts or prompts | Keep provider credentials in VS Code SecretStorage |
 
-## Every source. One workflow.
+## Explicit per-workspace activation
 
-GitHub, GitLab, Jira, Trello, Sentry, and local tasks all enter the same execution queue. Start the work you want; Jupiter creates or restores its isolated environment.
+Opening a folder does not start Jupiter project services.
 
-![Tasks from multiple sources in one Jupiter queue](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-tasks.png)
+Before setup, the Jupiter view shows only the extension version and **Set Up Jupiter — Configure this workspace**. Jupiter does not create project state, inspect Git, poll providers, collect Problems, or start MCP or Telegram services until you activate a folder.
 
-## Git without checkout anxiety
+Setup is one action for a single-root workspace. In a multi-root workspace, you choose exactly one folder. The activation marker stays in local VS Code workspace state and is never added to the repository.
 
-Review exactly what changed for one task. Inspect files and diffs, commit and push, rebase safely, run a GitHub Actions workflow, and create a pull or merge request without leaving Task Details. External actions remain explicit.
+Use **Jupiter: Deactivate for This Workspace** to stop project services without deleting saved configuration or task state.
 
-![Task-scoped Git state and delivery actions](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-detail.png)
+## Works without Git after setup
 
-## AI that starts in the right place
+Workspace Task works in an ordinary writable folder. A `.git` directory, remote, hosting account, and task tracker are not required.
 
-Create a Codex or Copilot agent from the task instead of rebuilding context by hand. Jupiter attaches the task, repository, required branch, worktree path, source details, and repository instructions—and verifies the worktree boundary before Git actions.
+Git is discovered only when you use a Git capability. GitHub, GitLab, Jira, Trello, Sentry, Datadog, Crashlytics, Telegram, Actions, and QAA are configured independently and can always be added later.
 
-![Task-aware AI context in Jupiter](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-chat.png)
+## Workspace Task
 
-## Connect only what you need
+Workspace Task is the fastest way to give the current folder a durable task boundary. Open it immediately after setup, then choose **Create Agent**. Jupiter asks for the AI provider only at that moment and saves the choice for the workspace.
 
-| Area | Available workflows |
+Need a project-wide conversation instead? **Open Global Agent** creates or restores the project Agent. Need isolation for several changes? Start external or custom tasks in separate Git worktrees.
+
+## Task-to-delivery workflow
+
+Task Details presents one theme-aware delivery rail:
+
+**Context → Agent → Changes → Verification → Delivery → Review**
+
+The next-best-action engine explains why an action is recommended, which evidence supports it, and what blocks delivery. Read-only checks may refresh automatically. Local changes require an explicit command. Push, Actions, PR/MR creation, and other external mutations show a preview and require confirmation. Destructive operations keep typed confirmation.
+
+From Task Details and Task Files you can:
+
+- Continue or create the task Agent.
+- Inspect current and branch diffs.
+- Resolve stale branches, conflicts, and paused rebases.
+- Run delivery preflight, GitHub Actions, or QAA verification.
+- Commit and push reviewed changes.
+- Create or open a GitHub PR or GitLab MR.
+
+![Task-scoped changes and delivery controls](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-detail.png)
+
+## Isolated Git tasks
+
+GitHub Issues, GitLab Issues, Jira tickets, Trello cards, Sentry bugs, and local custom tasks enter the same flow. A Git task can own:
+
+- A predictable task branch.
+- A dedicated Git worktree.
+- A VS Code workspace for that worktree.
+- Saved source, Agent, verification, and review state.
+- Generated Agent context with worktree and branch guardrails.
+
+![Tasks from connected sources in one Jupiter view](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-tasks.png)
+
+## Problems to verified fixes
+
+Jupiter can collect selected Sentry, Datadog, and Firebase Crashlytics problems into a local encrypted evidence database. A problem can become an investigation, a task, an Agent, and a verified fix while preserving the same task boundary.
+
+## Integrations
+
+| Capability | State and workflow |
 | --- | --- |
-| Task sources | GitHub Issues, GitLab Issues, Jira Cloud, Trello cards, Sentry bugs, local custom tasks |
-| Repository hosts | GitHub, GitLab.com, self-managed GitLab |
-| AI | OpenAI Codex IDE, Codex CLI, VS Code Chat / GitHub Copilot |
-| Delivery | Commit and push, GitHub pull requests, GitLab merge requests, Jira review links |
-| Context | Local Jupiter MCP tools for current tasks, Git state, approved actions, and connected knowledge |
-| Collaboration | Optional Telegram topics connected to durable local Codex sessions |
+| AI Agents | Codex IDE/CLI, Claude IDE/CLI, and VS Code Chat / GitHub Copilot |
+| Git hosting | GitHub, GitLab.com, and self-managed GitLab |
+| Task sources | GitHub, GitLab, Jira Cloud, Trello, Sentry, and local tasks |
+| Verification | Read-only delivery preflight, GitHub Actions, and QAA |
+| Problems | Sentry, Datadog Error Tracking, and Firebase Crashlytics |
+| Knowledge | Scoped read-only Trello knowledge through Jupiter MCP |
+| Collaboration | Optional Telegram forum topics connected to durable local sessions |
 
-## Start your first task
+Each capability reports **Available**, **Needs configuration**, **Connected**, or **Unavailable** without blocking base workspace activation.
 
-1. Install Jupiter and open your main repository checkout in VS Code.
-2. Run **Jupiter: Setup Wizard** and confirm the repository, base branch, worktree location, and AI provider.
-3. Open the Jupiter Activity Bar view, refresh tasks, and choose **Start Task**. You can also create a custom task.
-4. In the task workspace, choose **Create Agent**, review the resulting changes, then commit, push, and create the PR or MR from Jupiter.
+## Local-first security and privacy
 
-Jira, Trello, Sentry, Telegram, MCP, GitHub Actions, releases, and QAA are optional. The core task-to-worktree flow works without enabling every integration.
+- Jupiter adds no hosted Jupiter cloud service.
+- Provider credentials stay in VS Code SecretStorage and are not inserted into Agent prompts.
+- Non-secret project state stays local and is excluded through `.git/info/exclude` when possible.
+- External mutations remain explicit; Jupiter does not silently push, create a review request, or transition a provider task.
+- Telemetry follows the global VS Code telemetry choice and `jupiter.telemetry.enabled`.
+- Product events contain event names plus fixed source/provider/verification categories only. Jupiter never sends workspace paths, folder or repository names, task or branch data, files, code, messages, errors, durations, stack traces, or Jupiter-created identifiers.
 
-## Local-first by design
+See [SECURITY.md](SECURITY.md) for reporting and the supported security boundary.
 
-- Project state stays with the local workspace; Jupiter adds no hosted Jupiter cloud service.
-- Provider credentials remain in VS Code SecretStorage and are not placed in AI prompts.
-- A branch is not pushed and a PR, MR, or source transition is not created silently.
-- Diagnostics report configuration and access problems without printing stored secrets.
+## 60-second quick start
 
-## Ready to give every task its own workspace?
+1. Install Jupiter and open the folder where you want it.
+2. Open the Jupiter Activity Bar view and choose **Set Up Jupiter**.
+3. Choose **Open Workspace Task**. Git is optional.
+4. Choose **Create Agent** and select a provider.
+5. Review changes and verification evidence in Task Details.
+6. Connect Git or an external service only when the task needs delivery.
 
-[Install Jupiter Workspaces](https://marketplace.visualstudio.com/items?itemName=wonderland.jupiter-io) and run **Jupiter: Setup Wizard**.
+## Essential commands
 
-Questions or feedback are welcome in the [public Jupiter issue tracker](https://github.com/irov/jupiter-marketplace/issues). Never include provider tokens or other secrets in an issue.
+- **Set Up This Workspace** — explicitly activate the selected folder.
+- **Open Workspace Task** — work directly in the active folder without requiring Git.
+- **Create Agent** / **Open Agent** — create or restore the task-aware AI session.
+- **Show Workspace Dashboard** — inspect activation, the next best action, blockers, integrations, and privacy status.
+- **Configure Workspace** — optionally configure Git and advanced workspace defaults.
+- **Show Task Files** — inspect task-scoped files and diffs.
+- **Run Delivery Preflight** — verify current branch evidence without an external mutation.
+- **Commit & Push Task** — commit reviewed changes and push after confirmation.
+- **Create Pull / Merge Request** — preview and create the review request.
+- **Deactivate for This Workspace** — stop Jupiter while preserving saved state.
+- **Delete Saved Workspace State** — separately remove only saved `state.json` after typed confirmation.
+
+## Requirements
+
+- VS Code 1.120 or newer.
+- A writable folder for Workspace Task.
+- Git in `PATH` only for branch, worktree, commit, push, or PR/MR workflows.
+- Credentials only for the optional providers you connect.
+
+## Support
+
+Read [SUPPORT.md](SUPPORT.md), search existing issues, or open a report in the [public Jupiter issue tracker](https://github.com/irov/jupiter-marketplace/issues). Include the first relevant Jupiter diagnostic or log message, but never include tokens or other secrets.
 
 ---
 
-This repository hosts the public Marketplace copy and image assets. The extension package references these public raw GitHub images so they render on the Visual Studio Marketplace page.
+This repository is the canonical source for Jupiter Marketplace copy and public image assets. Extension releases contain a checked snapshot and fail the release gate when that snapshot differs.

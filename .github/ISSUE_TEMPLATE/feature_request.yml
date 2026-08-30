@@ -1,0 +1,30 @@
+name: Feature request
+description: Propose an improvement to the Jupiter workflow
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Workflow problem
+      description: Describe the developer workflow that is hard today.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Delivery stage
+      options:
+        - Workspace
+        - Agent
+        - Changes
+        - Verification
+        - Delivery
+        - Review
+        - Integration
