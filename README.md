@@ -81,6 +81,19 @@ GitHub Issues, GitLab Issues, Jira tickets, Trello cards, Sentry bugs, and local
 
 Jupiter can collect selected Sentry, Datadog, and Firebase Crashlytics problems into a local encrypted evidence database. A problem can become an investigation, a task, an Agent, and a verified fix while preserving the same task boundary.
 
+## Jupiter Head: meetings that remember
+
+Jupiter Head joins Google Meet as a voice participant for the project in your current window. Say “Jupiter, …” and it answers by voice, can read the project’s Heart, tasks, and available code, and turns the meeting into a record you can check against the transcript.
+
+- **Knows who spoke.** Each participant is transcribed from their own audio track, so transcripts and results carry names instead of one anonymous mix.
+- **Remembers the series.** Meetings with the same title, or the same Meet link, form a series. Ask “What did we discuss last time?” or “What did we plan to do?” and Jupiter answers from earlier meetings with their dates, keeping agreed decisions apart from proposals. It does not bring up the past unless asked.
+- **Connects conversations.** When results are prepared, open plans and questions from earlier meetings are checked against the new discussion and marked done, in progress, blocked, changed, or cancelled, each linked to the transcript.
+- **Stays under your control.** Head runs as a separate background service on your computer. Transcripts and results stay encrypted locally, and raw audio is not recorded by default. Meetings from other series of the same project are used only while the meeting may read project data. Deleting a meeting also removes it from later results.
+
+Open **Jupiter: Head: Setup and Meetings** to connect the meeting accounts, run the one-time connection check, and join a meeting.
+
+![Jupiter Head recalls what a meeting series decided and planned](https://raw.githubusercontent.com/irov/jupiter-marketplace/main/resources/marketplace-meetings.png)
+
 ## Integrations
 
 | Capability | State and workflow |
@@ -92,6 +105,7 @@ Jupiter can collect selected Sentry, Datadog, and Firebase Crashlytics problems 
 | Problems | Sentry, Datadog Error Tracking, and Firebase Crashlytics |
 | Knowledge | Scoped read-only Trello knowledge through Jupiter MCP |
 | Collaboration | Optional Telegram forum topics connected to durable local sessions |
+| Meetings | Google Meet through Attendee with OpenAI voice and transcription, speaker names, and memory per meeting series |
 
 Each capability reports **Available**, **Needs configuration**, **Connected**, or **Unavailable** without blocking base workspace activation.
 
@@ -126,6 +140,7 @@ See [SECURITY.md](SECURITY.md) for reporting and the supported security boundary
 - **Run Delivery Preflight** — verify current branch evidence without an external mutation.
 - **Commit & Push Task** — commit reviewed changes and push after confirmation.
 - **Create Pull / Merge Request** — preview and create the review request.
+- **Head: Setup and Meetings** — connect meeting accounts, join Google Meet, and open results and series memory.
 - **Deactivate for This Workspace** — stop Jupiter while preserving saved state.
 - **Delete Saved Workspace State** — separately remove only saved `state.json` after typed confirmation.
 
@@ -135,6 +150,7 @@ See [SECURITY.md](SECURITY.md) for reporting and the supported security boundary
 - A writable folder for Workspace Task.
 - Git in `PATH` only for branch, worktree, commit, push, or PR/MR workflows.
 - Credentials only for the optional providers you connect.
+- For Jupiter Head: an Attendee account, an OpenAI API key, and a public HTTPS route to your computer through a managed Cloudflare Tunnel or your own server.
 
 ## Support
 

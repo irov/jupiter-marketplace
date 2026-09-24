@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080C1C"/><stop offset="1" stop-color="#1A1426"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#FFB561"/><stop offset="1" stop-color="#66E3B0"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.42"/></filter>
+    <clipPath id="frame"><rect width="1200" height="560" rx="30"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="560" fill="url(#bg)"/>
+    <circle cx="1060" cy="100" r="230" fill="#E07A2C" opacity="0.09"/>
+    <circle cx="330" cy="600" r="300" fill="#1F9A78" opacity="0.07"/>
+    <rect width="1200" height="560" fill="none" stroke="#33304F" stroke-width="2"/>
+  </g>
+
+  <g font-family="SF Pro Display, Inter, Arial, sans-serif">
+    <g transform="translate(58 54)">
+      <rect width="218" height="31" rx="15.5" fill="#2A1F1A" stroke="#6B4A2E"/>
+      <text x="18" y="21" fill="#FFC486" font-size="12" font-weight="750" letter-spacing="1.3">MEETINGS WITH MEMORY</text>
+    </g>
+    <text x="58" y="145" fill="#F7FAFF" font-size="46" font-weight="760" letter-spacing="-1.2">Meetings that</text>
+    <text x="58" y="200" fill="url(#accent)" font-size="46" font-weight="760" letter-spacing="-1.2">remember.</text>
+    <text x="58" y="257" fill="#B9C6DD" font-size="19">Jupiter Head joins Google Meet, knows</text>
+    <text x="58" y="286" fill="#B9C6DD" font-size="19">who said what, and answers what the</text>
+    <text x="58" y="315" fill="#B9C6DD" font-size="19">series decided and planned to do.</text>
+
+    <g transform="translate(58 379)" font-size="13">
+      <rect width="342" height="120" rx="14" fill="#0F172B" stroke="#2E3C62"/>
+      <text x="18" y="27" fill="#8A9CBA" font-size="11" font-weight="750" letter-spacing="1.1">SERIES MEMORY</text>
+      <g transform="translate(18 43)" fill="#D9E3F2" font-weight="620">
+        <circle cx="7" cy="7" r="7" fill="#1E3A34"/><path d="M4 7l2 2 4-5" fill="none" stroke="#66E3B0" stroke-width="1.5"/><text x="22" y="11">Speaker names in every transcript</text>
+        <g transform="translate(0 28)"><circle cx="7" cy="7" r="7" fill="#1E3A34"/><path d="M4 7l2 2 4-5" fill="none" stroke="#66E3B0" stroke-width="1.5"/><text x="22" y="11">Plans followed from meeting to meeting</text></g>
+        <g transform="translate(0 56)"><circle cx="7" cy="7" r="7" fill="#1E3A34"/><path d="M4 7l2 2 4-5" fill="none" stroke="#66E3B0" stroke-width="1.5"/><text x="22" y="11">Recalls the past only when asked</text></g>
+      </g>
+    </g>
+
+    <g transform="translate(455 42)" filter="url(#shadow)">
+      <rect width="687" height="476" rx="22" fill="#0A1020" stroke="#35355A"/>
+      <rect width="687" height="55" rx="22" fill="#12172B"/>
+      <rect y="33" width="687" height="22" fill="#12172B"/>
+      <circle cx="24" cy="28" r="5" fill="#FF6F6F"/><circle cx="42" cy="28" r="5" fill="#FFD166"/><circle cx="60" cy="28" r="5" fill="#66E39A"/>
+      <text x="88" y="33" fill="#E5EAF6" font-size="14" font-weight="700">Weekly sync · back</text>
+      <text x="226" y="33" fill="#7D8CA8" font-size="12">3 meetings in the series</text>
+      <rect x="555" y="16" width="107" height="24" rx="12" fill="#173A2C"/><circle cx="570" cy="28" r="4" fill="#66E39A"/><text x="581" y="32" fill="#8CEAB3" font-size="10" font-weight="750">IN MEETING</text>
+
+      <g transform="translate(24 78)">
+        <circle cx="18" cy="18" r="16" fill="#2B2440" stroke="#5C4E8C"/><text x="18" y="23" fill="#CDBBFF" font-size="13" font-weight="750" text-anchor="middle">A</text>
+        <text x="46" y="14" fill="#E5EAF6" font-size="12" font-weight="700">Anna</text><text x="86" y="14" fill="#6E7F9C" font-size="11">10:02</text>
+        <text x="46" y="33" fill="#C9D4E6" font-size="13">Jupiter, what did we plan to do last time?</text>
+      </g>
+
+      <g transform="translate(24 138)">
+        <circle cx="18" cy="18" r="16" fill="#2A2016" stroke="#8A5A2B"/>
+        <path d="M18 9l2.3 5.8 5.7 2.2-5.7 2.3-2.3 5.7-2.3-5.7-5.7-2.3 5.7-2.2z" fill="#FFB561"/>
+        <rect x="46" width="593" height="206" rx="15" fill="#10192D" stroke="#303B61"/>
+        <text x="66" y="30" fill="#F0F4FB" font-size="13" font-weight="670">On September 17 you agreed to ship release 1.4 on Friday.</text>
+        <text x="66" y="54" fill="#8597B5" font-size="12">Open plans from «Weekly sync»:</text>
+        <g transform="translate(66 74)" font-size="12">
+          <rect width="553" height="30" rx="8" fill="#132338"/>
+          <circle cx="16" cy="15" r="7" fill="#1E3A34"/><path d="M13 15l2 2 4-5" fill="none" stroke="#66E3B0" stroke-width="1.5"/>
+          <text x="32" y="19" fill="#D9E3F2">Migrate the database</text><text x="232" y="19" fill="#7D8CA8">Anna</text>
+          <rect x="455" y="7" width="84" height="17" rx="8.5" fill="#173A2C"/><text x="497" y="19" fill="#8CEAB3" font-size="10" font-weight="750" text-anchor="middle">DONE</text>
+          <g transform="translate(0 38)">
+            <rect width="553" height="30" rx="8" fill="#132338"/>
+            <circle cx="16" cy="15" r="7" fill="none" stroke="#FFB561" stroke-width="1.5"/>
+            <text x="32" y="19" fill="#D9E3F2">Check the rollback path</text><text x="232" y="19" fill="#7D8CA8">Yuri</text>
+            <rect x="455" y="7" width="84" height="17" rx="8.5" fill="#3A2A16"/><text x="497" y="19" fill="#FFC486" font-size="10" font-weight="750" text-anchor="middle">IN PROGRESS</text>
+          </g>
+          <g transform="translate(0 76)">
+            <rect width="553" height="30" rx="8" fill="#132338"/>
+            <circle cx="16" cy="15" r="7" fill="none" stroke="#56D9FF" stroke-width="1.5"/>
+            <text x="32" y="19" fill="#D9E3F2">Decide on the feature flag</text><text x="232" y="19" fill="#7D8CA8">Open question</text>
+            <rect x="455" y="7" width="84" height="17" rx="8.5" fill="#15304A"/><text x="497" y="19" fill="#8FE3FF" font-size="10" font-weight="750" text-anchor="middle">OPEN</text>
+          </g>
+        </g>
+        <text x="66" y="192" fill="#6E7F9C" font-size="11">From meetings on Sep 10 and Sep 17 · each status links to the transcript</text>
+      </g>
+
+      <g transform="translate(24 368)">
+        <rect width="639" height="84" rx="14" fill="#0D1528" stroke="#263858"/>
+        <text x="18" y="27" fill="#8A9CBA" font-size="11" font-weight="750" letter-spacing="1.1">MEETING RESULTS</text>
+        <text x="18" y="52" fill="#C9D4E6" font-size="13">Decisions · Tasks with owners · Questions · Earlier plans and their status</text>
+        <text x="18" y="72" fill="#6E7F9C" font-size="11">Transcripts stay encrypted on your computer; raw audio is not recorded by default.</text>
+      </g>
+    </g>
+  </g>
+</svg>

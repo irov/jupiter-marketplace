@@ -1,8 +1,8 @@
 # Marketplace asset sources
 
-Run `../../scripts/render-assets.sh` from this directory, or `./scripts/render-assets.sh` from the repository root, to rebuild the four 1200×560 Marketplace PNGs.
+Run `../../scripts/render-assets.sh` from this directory, or `./scripts/render-assets.sh` from the repository root, to rebuild the five 1200×560 Marketplace PNGs.
 
-- `marketplace-tasks.svg`, `marketplace-detail.svg`, and `marketplace-chat.svg` are deterministic SVG sources with editable copy.
+- `marketplace-tasks.svg`, `marketplace-detail.svg`, `marketplace-chat.svg`, and `marketplace-meetings.svg` are deterministic SVG sources with editable copy.
 - `marketplace-hero-art.png` is the source for `marketplace-flow.png`. The render script resizes and crops it to the Marketplace banner aspect ratio.
 - The public `resources/marketplace-*.png` files are generated outputs referenced by the extension README.
 
